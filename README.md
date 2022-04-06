@@ -3,18 +3,20 @@ The @Autowired annotation provides more fine-grained control over where and how 
 
 To use auto-wire feature through annotations, we must include annotation-config tag with in our xml based configuration file: <context:annotation-config />
 
+```
 <bean id="paymentGateway" class="bean.PaymentGateway"/>
 <bean id="orderBean" class="bean.Order" >
     <property name="item" value=" java Book" />
     <property name="price" value="RS 225" />
-</bean>
+</bean>```
 
 
  #### Here we are done setter based Autowiring :
+ ```
  @Autowired
     public void setOrder(Order order) {
         this.order = order;
-    }
+    }```
     
     
   #### Required Tools and Softwares:
